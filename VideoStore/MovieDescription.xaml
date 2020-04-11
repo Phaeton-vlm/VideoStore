@@ -1,0 +1,125 @@
+﻿<Page x:Class="VideoStore.MovieDescription"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoStore"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="960"
+      Title="MovieDescription">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Border Margin="0 5 0 0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="1" Background="{DynamicResource PrimaryHueDarkBrush}"></Border>
+
+        <StackPanel Height="570" Grid.Column="1">
+            <TextBlock x:Name="movieNameTextBox" MaxHeight="144" TextWrapping="Wrap" Width="660" Height="auto" FontSize="36" Foreground="Gainsboro" LineHeight="1"></TextBlock>
+            <Border Height="1" Background="{DynamicResource PrimaryHueDarkBrush}"></Border>
+            <TextBlock HorizontalAlignment="Left" x:Name="descriptionTextBox" Height="410" TextWrapping="Wrap" Width="650" FontSize="18" Foreground="#FF959595" LineHeight="1" Margin="0,10,0,0" TextAlignment="Justify"></TextBlock>
+        </StackPanel>
+
+        <StackPanel Width="290" HorizontalAlignment="Center">
+            <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+                <Image HorizontalAlignment="Left" Width="245" x:Name="movieImage" Height="300"></Image>
+                <StackPanel Margin="-20 0 0 0">
+                    <ToggleButton x:Name="highQualityButton" Margin="0 10 0 0" IsHitTestVisible="False" ClipToBounds="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы в высоком качестве картинки" IsChecked="False" >
+                        <materialDesign:PackIcon Width="28" Height="28" Kind="Video4kBox" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="highSoundButton" Margin="0 10 0 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы в высоком качестве звука" IsChecked="False">
+                        <materialDesign:PackIcon Width="28" Height="28" Kind="SurroundSound51" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="allDevicesButton" Margin="0 10 0 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите и скачивайте фильмы с любых устройств" IsChecked="False">
+                        <materialDesign:PackIcon Width="28" Height="28" Kind="MobilePhoneIphone" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="noAdvertizingButton" Margin="0 10 0 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы без рекламы" IsChecked="False">
+                        <materialDesign:PackIcon Width="28" Height="28" Kind="HighlightOff"/>
+                    </ToggleButton>
+                    <ToggleButton x:Name="allLanguagesButton" Margin="0 10 0 0"  IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Возможность просмотра фильма на языке оригинала" IsChecked="False">
+                        <materialDesign:PackIcon Width="28" Height="28" Kind="Language"/>
+                    </ToggleButton>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" Margin="0 10 0 0">Год выхода:<TextBlock Foreground="LightGray" x:Name="releaseYearTextBlock"></TextBlock></TextBlock>
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" >Страна:<TextBlock Foreground="LightGray" x:Name="countryTextBlock"></TextBlock></TextBlock>
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" >Режиссер:<TextBlock Foreground="LightGray" x:Name="directorTextBlock"></TextBlock></TextBlock>
+
+            <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource PrimaryHueDarkBrush}" MaxHeight="32" >Актеры:
+                <TextBlock MaxHeight="32" x:Name="actorsTextBlock" TextWrapping="Wrap" Foreground="LightGray">        
+                </TextBlock>
+            </TextBlock>
+
+            <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource PrimaryHueDarkBrush}" MaxHeight="32" >Продюсеры:
+                <TextBlock MaxHeight="32" x:Name="producersTextBlock" TextWrapping="Wrap" Foreground="LightGray">        
+                </TextBlock>
+            </TextBlock>
+
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}">Жанр:<TextBlock Foreground="LightGray" x:Name="genreTextBlock"></TextBlock></TextBlock>
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}">Время:<TextBlock Foreground="LightGray" x:Name="durationTextBlock"></TextBlock></TextBlock>
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}">Оценка:<TextBlock Foreground="LightGray" x:Name="markTextBlock"></TextBlock></TextBlock>
+
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="buyButton" Click="buyButton_Click" Margin="0 10 2 0"  Style="{StaticResource MaterialDesignRaisedButton}" Width="150">Купить</Button>
+                <Button Margin="2 10 0 0"  Style="{StaticResource MaterialDesignRaisedButton}" Width="150" Click="Button_Click_1">Смотреть</Button>
+            </StackPanel>
+        </StackPanel>
+        
+        <materialDesign:DialogHost IsOpen="False" x:Name="DialogWindowBuy" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <materialDesign:DialogHost.DialogContent>
+
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                    <TextBlock Width="220" TextWrapping="Wrap" TextAlignment="Justify" HorizontalAlignment="Center" FontSize="14" >При покупке фильма вы сможете просматривать его в любое время неограниченное число раз, также будут доступны все услуги для данного фильма.</TextBlock>
+
+                    <TextBlock Margin="0 10 0 0" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold">Стоимость: <TextBlock x:Name="textBoxPrice">5</TextBlock> р</TextBlock>
+                    
+                    <StackPanel Orientation="Vertical" Margin="0,10,0,0" HorizontalAlignment="Center">
+                        <Button Width="220" Click="Button_Click" >
+                            <TextBlock Foreground="{DynamicResource PrimaryHueLightBrush}">Купить</TextBlock>
+                        </Button>
+                        <Button Margin="0 5 0 0" Width="220" Background="{x:Null}" BorderThickness="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=DialogWindowBuy}">
+                            <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" >Назад</TextBlock>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+
+        <materialDesign:DialogHost IsOpen="False" x:Name="DialogWindowWatchMovie" Grid.RowSpan="2" Grid.ColumnSpan="2" Loaded="DialogWindowWatchMovie_Loaded" DialogOpened="DialogWindowWatchMovie_DialogOpened" DialogClosing="DialogWindowWatchMovie_DialogClosing">
+            <materialDesign:DialogHost.DialogContent>
+
+                <StackPanel Width="300" Margin="20">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <ToggleButton x:Name="highQualityButton2" Margin="5 0 5 0" IsHitTestVisible="False" ClipToBounds="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы в высоком качестве картинки" IsChecked="False" Checked="highQualityButton2_Checked" Unchecked="highQualityButton2_Unchecked" >
+                            <materialDesign:PackIcon Width="28" Height="28" Kind="Video4kBox" />
+                        </ToggleButton>
+                        <ToggleButton x:Name="highSoundButton2" Margin="5 0 5 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы в высоком качестве звука" IsChecked="False" Checked="highQualityButton2_Checked" Unchecked="highQualityButton2_Unchecked">
+                            <materialDesign:PackIcon Width="28" Height="28" Kind="SurroundSound51" />
+                        </ToggleButton>
+                        <ToggleButton x:Name="allDevicesButton2" Margin="5 0 5 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите и скачивайте фильмы с любых устройств" IsChecked="False" Checked="highQualityButton2_Checked" Unchecked="highQualityButton2_Unchecked">
+                            <materialDesign:PackIcon Width="28" Height="28" Kind="MobilePhoneIphone" />
+                        </ToggleButton>
+                        <ToggleButton x:Name="noAdvertizingButton2" Margin="5 0 5 0" IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Смотрите фильмы без рекламы" IsChecked="False" Checked="highQualityButton2_Checked" Unchecked="highQualityButton2_Unchecked">
+                            <materialDesign:PackIcon Width="28" Height="28" Kind="HighlightOff"/>
+                        </ToggleButton>
+                        <ToggleButton x:Name="allLanguagesButton2" Margin="5 0 5 0"  IsHitTestVisible="False" Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}" ToolTip="Возможность просмотра фильма на языке оригинала" IsChecked="False" Checked="highQualityButton2_Checked" Unchecked="highQualityButton2_Unchecked">
+                            <materialDesign:PackIcon Width="28" Height="28" Kind="Language"/>
+                        </ToggleButton>
+                    </StackPanel>
+
+                    <TextBlock FontSize="16" HorizontalAlignment="Center" Margin="0,5">Стоимость просмотра: <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" FontSize="20" x:Name="watchPriceValue">0</TextBlock></TextBlock>
+                    
+                    <Button Margin="2 10 0 0"  Style="{StaticResource MaterialDesignRaisedButton}" Width="200" Click="Button_Click_2">Начать просмотр</Button>
+                    
+                    <Button Margin="0 5 0 0" Width="200" Background="{x:Null}" BorderThickness="1" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" CommandTarget="{Binding ElementName=DialogWindowWatchMovie}">
+                        <TextBlock Foreground="{DynamicResource PrimaryHueDarkBrush}" >Назад</TextBlock>
+                    </Button>
+                </StackPanel>
+
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+    </Grid>
+</Page>

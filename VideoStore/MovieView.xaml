@@ -1,0 +1,24 @@
+﻿<Page x:Class="VideoStore.MovieView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VideoStore"
+      mc:Ignorable="d" 
+      d:DesignHeight="590" d:DesignWidth="960"
+      Title="MovieView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button Style="{StaticResource MaterialDesignRaisedDarkButton}" x:Name="MovieList_Button"  Background="{DynamicResource PrimaryHueDarkBrush}" Width="480" Click="MovieList_Button_Click" BorderBrush="{x:Null}"></Button>
+            <Button Style="{StaticResource MaterialDesignRaisedLightButton}" x:Name="Description_Button" Background="{DynamicResource PrimaryHueLightBrush}" Width="480" Click="Description_Button_Click" BorderBrush="{x:Null}"></Button>
+        </StackPanel>
+        
+        <Frame Grid.Row="1" x:Name="movieViewFrame"></Frame>
+    </Grid>
+</Page>

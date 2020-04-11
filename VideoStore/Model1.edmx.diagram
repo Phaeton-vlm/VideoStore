@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7ed2ccff1fa44b9d9f9f97a06a7a684c" Name="Diagram1">
+        <EntityTypeShape EntityType="VideoStoreModel.ConnectedServices" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.Genres" Width="1.5" PointX="3.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.Movies" Width="1.5" PointX="6" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.PurchasedMovies" Width="1.5" PointX="8.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.Services" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.Subscritions" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VideoStoreModel.Users" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="VideoStoreModel.FK_ConnectedServices_To_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoStoreModel.FK_ConnectedServices_To_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoStoreModel.FK_Genres_To_Movies" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoStoreModel.FK_PurchasedMovies_To_Movies" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoStoreModel.FK_PurchasedMovies_To_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="VideoStoreModel.FK_Users_To_Subscritions" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

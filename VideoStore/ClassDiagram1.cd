@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VideoStore.App" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.AppUpdate" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBQAAAAgAAAAMAgCAAAAAGAAAAQAIAAIAAAgAihAIAQ=</HashCode>
+      <FileName>AppUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.CurrentUser" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAEAACYAAAAAAACAAAgEACAAAAAAAQAAAAAABAA=</HashCode>
+      <FileName>CurrentUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.HelpPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HelpPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.LibraryList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAQAAAABAAAIAAAAAgEEAQAAFAAAAAAACACAAAA=</HashCode>
+      <FileName>LibraryList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.LibraryListItem" Collapsed="true">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibraryListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.LibraryMovieDescription" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAI=</HashCode>
+      <FileName>LibraryMovieDescription.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.LibraryView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQAAAAAAAAAAAAAAAAAAAABAAAEAAAAQACAgAA=</HashCode>
+      <FileName>LibraryView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAMQAAAEwhEAAGAwAAIEEEAAcAgAACACAECAgAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.VideoStoreEntities" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kBIBACICAAChEAACAAICQAAAEAAEgAAAEAAAEAAAAAA=</HashCode>
+      <FileName>Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.ConnectedServices" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jAAACKAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConnectedServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Genres" Collapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Genres.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.GetUser_Result" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAAAAAACAAAAQAAACAAAwAACAAAAAAAQAQAAIAAAA=</HashCode>
+      <FileName>GetUser_Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Movies" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAgAAgigBAAAAMAAAAAAAIQAAAAAACAAsAAAAA=</HashCode>
+      <FileName>Movies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.PurchasedMovies" Collapsed="true">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACABAQAAEAAAAAAAAAgAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>PurchasedMovies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Services" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAQAAAAAAEAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Services.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.sp_helpdiagramdefinition_Result" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sp_helpdiagramdefinition_Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.sp_helpdiagrams_Result" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAEAAiAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sp_helpdiagrams_Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Subscritions" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACIAAAAAAAIAAAAAAAAAAAAAAAAAAAAQgAAAAAA=</HashCode>
+      <FileName>Subscritions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.sysdiagrams" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAQAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sysdiagrams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Users" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MBABACAAACAAAAQAAACAAAwAACAAAAAAAQAQAAIAAAA=</HashCode>
+      <FileName>Users.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.MovieDescription" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAQAAAAJDAAACAAAAAEIAAAAIAAAEAAECAAAAAo=</HashCode>
+      <FileName>MovieDescription.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.MovieListItem" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAAAAAAAAAgAQABBIAAFAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>MovieListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.MovieModel" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAEAQAigAAAAAEAAAAAAAIQAAEAAACAAAAAAAI=</HashCode>
+      <FileName>MovieModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.MoviesList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAQAAAABAAAIAAAAAgEEAAAAFAAAAAAACACAAAA=</HashCode>
+      <FileName>MoviesList.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.MovieView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQAAAAAAIAAAAAAAAAAAAAAAAAAAAAAQQCAgAA=</HashCode>
+      <FileName>MovieView.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.ServicesItem" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIAAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ServicesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.ServicesModel" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>ServicesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Sorting" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAACAAAAAACBACgAAAAgAAAAAUBIgAAAADAEQCAAAI=</HashCode>
+      <FileName>Sorting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.SubscriptionListItem" Collapsed="true">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAAAQQAgAAAEAEAADAAAAAAIAAAAQAAAAgAAAA=</HashCode>
+      <FileName>SubscriptionListItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.SubscriptionModel" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAEAEAAAAACAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubscriptionModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.SubscriptionPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAABAAAAAEAAAAABAAAAAAAAAgBAIA=</HashCode>
+      <FileName>SubscriptionPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.UserInfoPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserInfoPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoStore.Properties.Resources" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoStore.Properties.Settings" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
